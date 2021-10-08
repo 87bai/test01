@@ -1,160 +1,157 @@
-/*
-Red Lantern redesign
-HFWD Chapter 1
-*/
 
-/*
-The font size here is set to 62.5% so that
-1em = 10px. This makes adjusting our typography
-a little easier
-*/
-body {
-	margin: 0 auto;
-	width: 800px;
-	padding: 0;
-	background: #6e0427 url('../images/body_bg.gif') repeat-x top;
-	font-family: Helvetica, sans-serif;
-	font-size: 62.5%;
-	color: #333;
-}
-
-h1, h2, p, ul, li {
-	margin: 0;
-	padding: 0;
-}
-
-p {
-	font-size: 1.4em;
-	line-height: 1.4em;
-}
-
-ul {
-	list-style-type: none;
-}
-
-a:link {
-	color: #333;
-	background: #eee;
-}
-a:visited {
-	color: #ff0000;
-	background: #eee;
-}
-
-/* This rule adds a nice style to our ampersands */
-span.amp {
-	font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
-	font-weight: normal;
-	font-style: italic;
-}
-
- 
-#masthead {
-	margin: 0 auto ;
-	margin-top: 20px;
-	width: 800px;
-	color: #fff;
-}
-
-#masthead h1 {
-	float: left;
-}
-
-#nav {
-	float: right;
-	margin: 50px 10px 0 0;
-	font-size: 1.4em;
-}
-
- 
-#nav li {
-	display: inline;
-	margin: 0 0 0 20px;
-}
-
-#nav li a {
-	color: #fff;
-	text-decoration: none;
-	background: none;
-}
-
-/*
-Because the header content is outside the wrap <div>,
-we need to use the same "margin: 0 auto" trick to center
-the layout
-*/
-#wrap {
-	clear: both;
-	margin: 0 auto;
-	padding: 10px;
-	width: 780px;
-	background: #fff;
-	border: 10px solid #5c0505;
-}
-
-#header img {
-	border: 10px solid #ccc;
-}
-
-#header h1 {
-	font-size: 2em;
-	margin: 10px 0 0 0;
-	padding: 10px;
-	text-align: center;
-	background: url('../images/tagline_bg.gif') repeat-x;
-}
-
-#content, #sidebar {
-	width: 360px;
-	margin: 20px 0 20px 0;
-	padding: 10px;
-}
-
-#content {
-	float: right;
-}
-
-#content h2 {
-	font-size: 2.4em;
-	margin: 0 0 10px 0;
-}
-
-#content p {
-	margin: 0 0 10px 0;
-}
-
-#link-list {
-	margin: 20px 0 0 0;
-	font-size: 1.4em;
-}
-
-#link-list li {
-	margin: 0 0 10px 0;
-}
-
-#sidebar {
-	float: left;
-	background: #eee;
-}
-
-#sidebar h2 {
-	font-weight: bold;
-	border-bottom: 1px solid #ccc;
-	margin: 0 0 20px 0;
-	padding: 5px;
-}
-
-#port li {
-	margin: 0 10px 20px 0;
-	float: left;
-	border: 5px solid #ddd;
-}
-
-#footer {
-	clear: both;
-	background: #eee;
-	padding: 10px;
-	border-top: 2px solid #ddd;
-	text-align: center;
-	color: #777;
-}
+		#header {
+			background-color: #E0EFE4;
+			width: 100%;
+			height: 480px;
+		}
+		#headerContainer {
+			width: 980px;
+			margin:auto;
+		}
+		#rightHeader {
+			float: right;
+			width: px;
+		}
+		#topLink {
+			border-radius: 16px;
+			background-color: #2B8CCC;
+			float: right;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-top: 38px;
+		}
+		#logo {
+			float: left;
+			margin-top: 25px;
+			margin-left: 30px;
+		}
+		#topLink a    {
+			color: #FFFFFF;
+		}
+		#Nav ul    {
+			list-style-type: none;
+			font-size: 1.2em;
+			color: #5C5A53;
+			font-family: Charlemagne Std;
+		}
+		#Nav ul li    {
+			float: left;
+			margin-left: 30px;
+			margin-right: 10px;
+		}
+		#Nav    {
+			float: right;
+			clear: right;
+		}
+		#headerContainer img {
+			float: right;
+			margin-top: 10px;
+		}
+		
+		#leftheader h1  {
+			text-align: left;
+			color: #2B8BCC;
+			font-family: Charlemagne Std;
+			font-style: normal;
+			font-weight: 400;
+			background-image: url(../assets/Line.png);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			background-size: auto 1px;
+		}
+		#leftheader {
+			float: left;
+			margin-top: 18px;
+			width: 360px;
+			margin-left: 37px;
+		}
+		#leftheader h1 .h1Sec2 {
+			color: #EFA656;
+		}
+		#leftheader p {
+			font-size: 18px;
+		}
+		#mainContainer {
+			background-image: -webkit-linear-gradient(270deg,rgba(0,66,128,1.00) 0%,rgba(61,142,193,1.00) 100%);
+			background-image: linear-gradient(180deg,rgba(0,66,128,1.00) 0%,rgba(61,142,193,1.00) 100%);
+			width: 100%;
+			height: 315px;
+		}
+		
+		#wrapper {
+			width: 980px;
+			margin:auto;
+		}
+		#wrapper .cms {
+			width: 210px;
+			margin-left: 31px;
+			padding-top: 50px;
+			left: -4px;
+			text-indent: 15px;
+			float: left;
+		}
+		#wrapper .cms h3 {
+			color: #FFFFFF;
+			text-align: left;
+			text-indent: 14px;
+			padding-top: 21px;
+			font-family: Charlemagne Std;
+			font-size:16px;
+		}
+		#wrapper .cms img {
+			float: left;
+		}
+		#wrapper .cms a {
+			background-image: url(../assets/RArrow.png);
+			background-repeat: no-repeat;
+			background-position: left center;
+			float: left;
+		}
+		#wrapper .cms p {
+			clear: both;
+			line-height: 1.2em;
+			padding-top: 10px;
+			font-size: 1em;
+			text-indent: 0px;
+		}
+		@media (min-width: 768px) and (max-width: 1280px) {
+			body{
+			  font-size:16px;
+			}
+		}
+		@media (min-width: 480px) and (max-width: 768px) {
+			body{
+			  font-size:22px;
+			}
+		}
+		@media (min-width: 320px) and (max-width: 480px) {
+			body{
+			  font-size:28px;
+			}
+		}
+		@media (max-width: 320px) {
+			body{
+			  font-size:32px;
+		
+			}
+	
+		}
+		
+		#nav {	list-style-type: none;	position: relative;	margin-top: 0px;	margin-right: 0px;	margin-bottom: 0px;	margin-left: 0px;	padding-top: 7px;	padding-bottom: 22px;	padding-right: 23px;	padding-left: 37px;	float: left;}
+		#nav li {	float: left;	position: relative;}
+		
+		#nav li a {	float: left;	display: inline-block;	padding-top: 20px;	padding-bottom: 20px;	padding-left: 20px;	padding-right: 20px;	color: #FFFFFF;	text-decoration: none;	background-color: #270AD2;	background-image: -webkit-linear-gradient(270deg,rgba(8,28,163,1.00) 0%,rgba(68,105,222,1.00) 100%);	background-image: linear-gradient(180deg,rgba(8,28,163,1.00) 0%,rgba(68,105,222,1.00) 100%); }
+		#nav li a:hover {	
+			background-image: -webkit-linear-gradient(270deg,rgba(236,13,203,1.00) 0%,rgba(187,89,214,1.00) 100%);	background-image: linear-gradient(180deg,rgba(236,13,203,1.00) 0%,rgba(187,89,214,1.00) 100%);		 }
+		
+		#nav li ul {		
+		transition: opacity 0.5s ease;	
+		;}
+		
+		#nav li ul li a {	float: none;	border-radius: 20px;	width: 150px;	opacity: 1;	margin-bottom: 5px;} 
+		
+		#nav li:hover >ul{ 	
+			opacity: 1;
+		}
